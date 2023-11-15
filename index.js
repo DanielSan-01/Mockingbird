@@ -1,18 +1,71 @@
-
-let gapped = document.getElementById("gapped")
-console.log (gapped)
-
-let gap = 0
+let gapped = document.getElementById("gapped");
+let overtakeLevel = document.getElementById("overtake-level");
+let gap = 0;
 
 function increment() {
-  console.log("clicked")
-  gap = gap + 1
-  gapped.innerText = gap
-  console.log(gap)
+    gap = gap + 1;
+    gapped.innerText = gap;
+
+    // Call setLevel function, so everytime we call increment function on the button press, we call setLevel
+    setLevel();
 }
 
+// Define function to set level
+const setLevel = () => {
+    if (gap >= 2) {
+        overtakeLevel.innerText = "Initiated";
+    }
 
+    if (gap >= 4) {
+        overtakeLevel.innerText = "Driver";
+    }
 
+    if (gap >= 5) {
+        overtakeLevel.innerText = "Madlad";
+    }
+
+    if (gap >= 7) {
+        overtakeLevel.innerText = "Senior Madlad";
+    }
+
+    if (gap >= 10) {
+        overtakeLevel.innerText = "Absolute MADMAN";
+    }
+
+    if (gap >= 15) {
+        overtakeLevel.innerText = "TrueSpeed";
+    }
+
+    if (gap >= 20) {
+        overtakeLevel.innerText = "Legend";
+    }
+
+    if (gap >= 23) {
+        overtakeLevel.innerText = "ABSOLUTE LEGEND";
+    }
+
+    if (gap >= 26) {
+        overtakeLevel.innerText = "HOLY SHIT KILL";
+    }
+
+    if (gap >= 30) {
+        overtakeLevel.innerText = "STOP THIS MAN";
+    }
+
+    if (gap >= 32) {
+        overtakeLevel.innerText = "WHOS MANS IS THIS";
+    }
+
+    if (gap >= 35) {
+        overtakeLevel.innerText = "Ghost rider";
+    }
+};
+
+let lapscompleted = 0;
+function incrementlap() {
+    lapscompleted = lapscompleted + 1;
+}
+console.log(lapscompleted);
 
 // document.getElementById("count").innerText = 5
 /* 
@@ -60,10 +113,6 @@ let count = firstBatch + seconBatch
 console.log(count)
  */
 
-
-
-
-
 /* let myyears = 26
 let dogyears = 7 
 let mydogage = myyears * dogyears
@@ -82,9 +131,3 @@ function loglaptime () {
 }
 loglaptime()
 */
-
-let lapscompleted = 0
-function incrementlap(){
-  lapscompleted = lapscompleted + 1
-}
-console.log (lapscompleted)

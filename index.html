@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Overtake counter</title>
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class="background"></div>
-    <h1>Overake counter</h1>
-    <h2 id="gapped">0</h2>
-    <button id="increment-btn" onclick="increment()">Pass
-    </button>
-    <p>This app is created for race-use please drive safley on the road.</p>
+  <div class="background"></div>
+  <h1>Overake counter</h1>
+  <h2 id="overtake-level" style="margin-bottom: -70px">Novice</h2>
+  <h2 id="gapped">0</h2>
+  <button id="increment-btn" onclick="increment()">Pass
+  </button>
+  <p>This app is created for race-use please drive safley on the road.</p>
 </body>
 <script src="index.js">
-   document.getElementById("gapped").innerText = 5
+  document.getElementById("gapped").innerText = 5
 </script>
+
 </html>
