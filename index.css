@@ -46,6 +46,7 @@ button {
 
 #increment-btn {
   background: darkred;
+    touch-action: manipulation;
 }
 
 #save-btn {

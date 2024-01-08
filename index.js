@@ -17,7 +17,7 @@ const setLevel = () => {
     }
 
     if (gap >= 4) {
-        overtakeLevel.innerText = "Driver";
+        overtakeLevel.innerText = "Florida man";
     }
 
     if (gap >= 5) {
@@ -58,6 +58,9 @@ const setLevel = () => {
 
     if (gap >= 35) {
         overtakeLevel.innerText = "Ghost rider";
+    }
+    if (gap >= 35) {
+        overtakeLevel.innerText = "I drive TM";
     }
 };
 
