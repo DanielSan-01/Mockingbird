@@ -49,4 +49,4 @@ list of numbers and corresponding messages
 
 40 - "I drive TM"
 
-Thansk to Jonathan for helping with the project
+Thanks to Jonathan for helping with the project
